@@ -1,0 +1,219 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap");
+
+/* variables */
+:root {
+    --primary-color: #f5cf90;
+    --secondary-color: black;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+}
+
+h1,
+h2 {
+    font-family: italianno, serif;
+    color: var(--primary-color);
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Lora", serif;
+}
+
+/* DASHBOARD */
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    color: white !important;
+}
+
+.dashboard {
+    color: white;
+}
+
+.dashboard h2 {
+    font-size: 6rem;
+}
+
+.no-background-image {
+    background-image: none !important;
+    background-color: #171716;
+}
+
+/* NAVBAR */
+
+.nav-link {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.line {
+    display: block;
+    width: 24px;
+    height: 4px;
+    margin: 5px 0;
+    background-color: var(--primary-color);
+}
+
+/* Welcome component */
+#welcome h1 {
+    font-size: 10rem;
+}
+
+#welcome h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+#welcome a {
+    border: none;
+    width: 200px;
+}
+#welcome a:hover {
+    border: 1px solid var(--primary-color);
+    border-radius: 50px;
+    color: var(--secondary-color);
+}
+
+/* Menu component */
+
+#pizza-menu h2,
+#cart h2 {
+    font-size: 4rem;
+}
+
+#pizza-menu p {
+    font-size: 1rem;
+}
+
+#pizza-menu h3,
+#cart h3 {
+    font-size: 1.5rem;
+}
+
+#pizza-menu h3:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Cart component */
+#cart input {
+    width: 35px;
+    text-align: right;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+#remove-item {
+    /* background-color: transparent; */
+    color: red;
+    font-size: 10px;
+    border: none;
+}
+
+#remove-item:hover {
+    color: var(--primary-color);
+    background-color: red;
+}
+/* OrderConfirmation component */
+
+#Order-confirm h3 {
+    color: var(--primary-color);
+}
+
+/* TABLET*/
+@media (max-width: 780px) {
+    #welcome h1 {
+        font-size: 5rem;
+    }
+    #welcome h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Menu component */
+
+    #pizza-menu h2,
+    #cart h2 {
+        font-size: 4rem;
+        color: var(--primary-color);
+    }
+
+    #pizza-menu p #cart p {
+        font-size: 0.8rem;
+    }
+
+    #pizza-menu h3,
+    #cart h3 {
+        font-size: 1rem;
+    }
+}
+
+/* PHONE */
+
+@media (max-width: 500px) {
+    #welcome h1 {
+        font-size: 5rem;
+    }
+    #welcome h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Menu component */
+
+    #pizza-menu h2,
+    #cart h2 {
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    #pizza-menu p,
+    #cart p {
+        font-size: 0.5rem;
+    }
+
+    #pizza-menu h3,
+    #cart h3 {
+        font-size: 0.8rem;
+    }
+
+    #cart .btn {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        font-size: 0.5rem;
+    }
+}
