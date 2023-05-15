@@ -10,18 +10,12 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/home" class="nav-link">Dashboard</a>
-                    </li>
-                    <li class="nav-item">
                         <a href="/menu" class="nav-link">Menu</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="/login" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/register" class="nav-link">Register</a>
+                        <Logout class="nav-link"></Logout>
                     </li>
                 </ul>
             </div>
@@ -30,7 +24,12 @@
 </template>
 
 <script>
+import Logout from './Logout.vue';
+
 export default {
-    name: 'Navbar',
+    name: 'DashboardNavbar',
+    components: {
+        Logout
+    }
 }
 </script>

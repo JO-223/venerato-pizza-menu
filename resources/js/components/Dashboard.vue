@@ -1,5 +1,5 @@
 <template>
-    <logout></logout>
+    <DashboardNavbar></DashboardNavbar>
     <div class="container dashboard">
         <h2 class="text-center m-5">Admin Dashboard</h2>
         <div class="row">
@@ -19,14 +19,14 @@
 import CurrentOrders from './Dashboard/CurrentOrders.vue';
 import CreatePizza from './Dashboard/CreatePizza.vue';
 import RemovePizza from './Dashboard/RemovePizza.vue';
-import Logout from './Dashboard/Logout.vue';
+import DashboardNavbar from './Dashboard/DashboardNavbar.vue';
 
 export default {
     components: {
         CurrentOrders,
         CreatePizza,
         RemovePizza,
-        Logout
+        DashboardNavbar
     }
 };
 </script>

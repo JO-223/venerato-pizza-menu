@@ -1,5 +1,5 @@
 <template>
-    <button @click="logout" class="btn btn-danger">Logout</button>
+    <a href="" @click="logout">Logout</a>
 </template>
 
 <script>
